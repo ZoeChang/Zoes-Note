@@ -1,0 +1,18 @@
+<h4>Solution 1</h4>
+   <div class="outer" style="position: relative;">
+      <div class="fixtarget">
+          <div class="dummy-child"></div>
+          <div class="valign">test</div>
+      </div>
+   </div>
+   https://stackoverflow.com/questions/28455100/how-to-center-div-vertically-inside-of-absolutely-positioned-parent-div
+
+  <br><br><br>
+
+  <h4>Solution 2</h4>
+   <div class="table-cell-wrapper">
+      <div class="table-cell">
+          My text, should be align middle
+      </div>
+  </div>
+   https://stackoverflow.com/questions/8896965/vertical-align-table-cell-dont-work-with-position-absolute     
