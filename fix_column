@@ -16,3 +16,8 @@
       </div>
   </div>
    https://stackoverflow.com/questions/8896965/vertical-align-table-cell-dont-work-with-position-absolute     
+   
+   
+   #solution 3
+   display: flex;
+   align-items: center;
