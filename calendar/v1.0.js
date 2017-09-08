@@ -32,7 +32,7 @@ var calendar = {
 
         while (dateOfSat < monthLen){
             weekLen ++;
-            dateSat +=7;
+            dateOfSat +=7;
         };
 
         if (dateOfSat < monthLen) {
@@ -83,15 +83,15 @@ var calendar = {
             if (j < firstDay){
                 thisMonth = false;
                 printedDate = lastMonthLen - (firstDay - 1 - j);
-                time = date - 24 * 60 * 60 * 1000 * ( firstDay - j );
+                time = new Date(calendar.year,calendar.month-1,printedDate).getTime();
             } else if ( j >= monthLen + firstDay){
                 thisMonth = false;
                 printedDate = j - (monthLen + firstDay - 1);
-                time = date - 24 * 60 * 60 * 1000 * ( firstDay + j );
+                time = new Date(calendar.year,calendar.month+1,printedDate).getTime();
             } else {
                 thisMonth = true;
                 printedDate = j - (firstDay - 1);
-                time = date;
+                time = new Date(calendar.year,calendar.month,printedDate).getTime();
             };
             calendar.createCell(thisMonth, time);
             calendar.printDate(printedDate);
@@ -105,11 +105,12 @@ var calendar = {
         }
     },
     init: function(form){ //主方法
-        var today = calendar.proofreadDate( new Date() );
-        var current = today;
+
+        var today = new Date();
+
         // TODO 建立資料
         // 建立月曆
-        this.createCalendar(form,current);
+        this.createCalendar(form,today);
 
 
         // 上下月btn轉換
@@ -128,25 +129,6 @@ var calendar = {
         });
 
 
-
-
-        resetInfo(current);
-        addActive()
-
-        $("#score-calendar-preDay").click(function(){
-            moveCurrent(-1);
-            resetInfo(current);
-            addActive()
-        });
-
-        $("#score-calendar-nextDay").click(function(){
-            moveCurrent(1);
-            resetInfo(current);
-            addActive()
-        });
-
-
-
     }
 
 }
@@ -157,7 +139,9 @@ window.onload = function(){
     calendar.init(calendars);
 
 
-
+    $("#score-calendar-info").click(function(){
+        $("#score-calendar-page").toggle();
+    });
 
 
     function dayToZhDay(number){
@@ -203,10 +187,23 @@ window.onload = function(){
         $("#score-calendar-info").attr("data-date" , current);
     };
 
+    var today = calendar.proofreadDate ( new Date() );
+    var current = today;
 
+    console.log(current);
 
+        resetInfo(current);
+        addActive()
 
+        $("#score-calendar-preDay").click(function(){
+            moveCurrent(-1);
+            resetInfo(current);
+            addActive()
+        });
 
-
-
+        $("#score-calendar-nextDay").click(function(){
+            moveCurrent(1);
+            resetInfo(current);
+            addActive()
+        });
 }
