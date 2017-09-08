@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<meta HTTP-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JavaScript製作的簡單日曆(附詳解) - muent.com</title>
+<link rel="stylesheet" href="calendar.css">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<!-- <script type="text/javascript" src="calendar.js"></script> -->
+<script type="text/javascript" src="test.js"></script>
+
+
+</script>
+</head>
+    <body>
+
+
+
+        <div class="score-calendar" id="score-calendar">
+            <div class="score-calendar-simple score-calendar-header">
+                <div class="calendar-button" id="score-calendar-preDay"><<</div>
+                <div class="score-calendar-info" id="score-calendar-info"></div>
+                <div class="calendar-button" id="score-calendar-nextDay">>></div>
+            </div>
+
+            <div id="score-calendar-page">
+                <div class="score-calendar-header">
+                    <div class="score-calendar-button" id="score-calendar-preMonth"><</div>
+                    <div id="score-calendar-Tittle"></div>
+                    <div class="score-calendar-button" id="score-calendar-nextMonth">></div>
+                </div>
+
+                <div class="score-calendar-contant">
+                    <div class="score-calendar-dayTittle">
+                        <div class="score-calendar-day">日</div>
+                        <div class="score-calendar-day">一</div>
+                        <div class="score-calendar-day">二</div>
+                        <div class="score-calendar-day">三</div>
+                        <div class="score-calendar-day">四</div>
+                        <div class="score-calendar-day">五</div>
+                        <div class="score-calendar-day">六</div>
+                    </div>
+
+                    <div class="score-calendar-cellGroup" id="score-calendar-cellGroup"></div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+        <br><br><br><br>
+
+
+        <div class="score-calendar">
+
+            <div class="score-calendar-header">
+                <div class="score-calendar-button"><<</div>
+                <div>2017-09-06</div>
+                <div class="score-calendar-button">>></div>
+            </div>
+
+            <div class="score-calendar-contant">
+                <div class="score-calendar-dayTittle">
+                    <div class="score-calendar-day">日</div>
+                    <div class="score-calendar-day">一</div>
+                    <div class="score-calendar-day">二</div>
+                    <div class="score-calendar-day">三</div>
+                    <div class="score-calendar-day">四</div>
+                    <div class="score-calendar-day">五</div>
+                    <div class="score-calendar-day" data-xxx="yyy">六</div>
+                </div>
+
+                <div class="score-calendar-cellGroup">
+                    <div class="score-calendar-unit score-calendar-showCell">29</div>
+                    <div class="score-calendar-unit score-calendar-showCell">30</div>
+                    <div class="score-calendar-unit score-calendar-thisMonth score-calendar-showCell">1</div>
+                    <div class="score-calendar-unit score-calendar-thisMonth score-calendar-showCell">2</div>
+                    <div class="score-calendar-unit score-calendar-thisMonth score-calendar-showCell score-calendar-active">3
+                    </div>
+                    <div class="score-calendar-unit score-calendar-thisMonth score-calendar-showCell">
+                        4
+                        <div class="score-calendar-game">
+                            <p class="score-calendar-gameNumber">20</p>
+                            <p class="score-calendar-text">比賽</p>
+                        </div>
+                    </div>
+                    <div class="score-calendar-unit score-calendar-thisMonth score-calendar-active score-calendar-showCell">
+                        5
+                        <div class="score-calendar-game">
+                            <p class="score-calendar-gameNumber">20</p>
+                            <p class="score-calendar-text">比賽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+         <br><br><br><br>
+    </body>
+</html>
