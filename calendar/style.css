@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+/* #score-calendar{
+    display: none;
+} */
+
+.score-calendar {
+    background:rgb(244, 244, 245);
+    color: rgb(0, 0, 0);
+    width: 366px;
+}
+
+.score-calendar-header {
+    display: flex;
+    justify-content: space-between;
+
+    height: 32px;
+
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    align-items:center;
+}
+
+.score-calendar-button {
+    height: 32px;
+    width: 32px;
+
+    cursor: pointer;
+    cursor: hand;
+
+    /* for test >> and << */
+    vertical-align: middle;
+}
+
+.score-calendar-button:hover {
+    background: rgb(44, 166, 248);
+    color: rgb(255, 255, 255);
+}
+
+.score-calendar-contant {
+    padding: 21px 16px 26px;
+}
+
+.score-calendar-dayTittle {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    font-size: 14px;
+}
+
+.score-calendar-cellGroup {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* normal style*/
+.score-calendar-showCell {
+    width: 46px;
+    height: 60px;
+    margin-top: 1px;
+    padding-left: 3px;
+
+    font-size: 12px;
+    color: rgb(210, 210, 210);
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 6px;
+}
+
+/* this month with white background */
+.score-calendar-thisMonth{
+    color: rgb(126, 126 , 126);
+    background: rgb(255, 255, 255);
+}
+
+
+/* information of game */
+.score-calendar-game {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.score-calendar-gameNumber {
+    margin: 0px;
+    padding-top: 4px;
+    color: rgb(45, 167, 249);
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.score-calendar-text {
+    margin: 0px;
+    padding-top: 4px;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    line-height: 12px;
+}
+
+
+
+
+/* active */
+.score-calendar-showCell.score-calendar-active {
+    background: rgb(40, 165, 249);
+    color: rgb(255, 255, 255);
+    border: 0px;
+}
+
+.score-calendar-active .score-calendar-game {
+    background: rgb(29, 198, 245);
+}
+
+.score-calendar-active .score-calendar-gameNumber {
+    color: rgb(255, 255, 255);
+}
+
+.score-calendar-active .score-calendar-text {
+    color: rgb(255, 255, 255);
+}
+
+
+/* simple calendar */
+.score-calendar-simple {
+    width: 366px;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+.score-calendar-info {
+    width: 80%;
+}
+
+.calendar-button {
+    height: 32px;
+    width: 32px;
+
+    cursor: pointer;
+    cursor: hand;
+
+    /* for test >> and << */
+    vertical-align: middle;
+}
