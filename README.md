@@ -1,7 +1,7 @@
 # Zoes-Note
 
 ## Synopsis
-Recording the trail and test code during the development process.
+Recording the trail and test code during the development process.
 
 ## List
 * calendar - customize calendar
