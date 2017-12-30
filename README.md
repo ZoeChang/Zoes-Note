@@ -4,14 +4,14 @@
 Recording the trail and test code during the development process.
 
 ## List
-* calendar - customize calendar
-    * RWD design and working with JS objects.
+* calendar - customize calendar
+    * RWD design and working with JS objects.
     * show customized information on calendar.
-    * Associate to other components.
+    * Associate to other components.
 * infinited scroll -
-    * including jQuery ver. and pure JS ver.
+    * including jQuery ver. and pure JS ver.
 * ur-adjust
-    * change tab and content with url hash.
+    * change tab and content with url hash.
 * table
     * fix-column - 3 ways to make first column position fix with RWD design.
     * sortable-table
