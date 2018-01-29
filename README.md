@@ -19,3 +19,5 @@ Recording the trail and test code during the development process.
     * bar-chart.vue - vue component used canvas show animate effect.
     * radar-Chart.vue -  vue component used canvas.
     * D3-barsCharts.js - used d3.js.
+* utils
+    * utils.js - requestAnimationFrame function & cookie functions
